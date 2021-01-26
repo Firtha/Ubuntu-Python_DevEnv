@@ -23,4 +23,35 @@ Si vous avez besoin de cet environnement virtuel vous devez dans ce cas aller t�
 
 ## Cloner et monter la machine virtuelle
 
+Commencez par cloner le projet sur votre machine hôte :
+
+```bash
+$ git clone https://github.com/Firtha/Ubuntu-Python_DevEnv.git
+```
+
+Monter la machine virtuelle via l'outil vagrant, puis accédez y via ssh : 
+
+```bash
+$ cd Ubuntu-Python_DevEnv
+Ubuntu-Python_DevEnv $ vagrant up && vagrant ssh
+```
+
+
+A savoir, voici les commandes les plus utiles de Vagrant :
+
+```bash
+# Construire / Lancer la machine virtuelle
+$ vagrant up
+
+# Entrer dans la machine virtuelle via ssh
+$ vagrant ssh
+
+# Arrêter la machine virtuelle depuis la machine hôte
+$ vagrant halt
+
+# Détruire la machine virtuelle et nettoyer la machine hôte
+$ vagrant destroy
+```
+
 ## Instructions
+
