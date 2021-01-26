@@ -15,13 +15,6 @@ cp /vagrant/EncryptDecrypt.py .
 # python3 --version
 # pip3 --version
 
-## Install Python moduls :
-# pip3 install bitcoin
-
-# pip3 install bitcoin
-# python3.6 KeyDerivations.py
-# python3.6 EncryptDecrypt.py
-
 echo "************"
 echo "INSTALL DONE"
 echo "************"

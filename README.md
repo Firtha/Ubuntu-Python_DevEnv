@@ -13,6 +13,11 @@ Ces deux clés seront ensuite utilisées pour chiffrer puis déchiffrer le fichi
 
 Pour cela ce projet contient une machine virtuelle Ubuntu 18.04 avec toutes les dépendances nécessaires à l'exécution du programme de TP en Python mais il est aussi possible de s'affranchir de cette machine virtuelle si vous avez tous les éléments nécessaires sur votre machine hôte.
 
+Deux programmes sont disponibles :
+
+- KeyDerivations.py : Ce programme met en application les principes de dérivations des clés. En partant d'une clé privée, il génère une clé privé via courbe elliptique ainsi qu'une adresse à partir de la clé publique via les fonctions de Hash.
+- EncryptDecrypt.py : Ce programme met en application les principes de chiffrement et de déchiffrement asymétrique. A partir d'une clé privée et une clé publique, un message est chiffré puis déchiffré de manière asymétrique.
+
 ## Installation de Vagrant
 
 Vagrant est un outil développé par HashiCorp permettant de construire simplement des machines virtuelles, l'outil fonctionne en partenariat avec les outils virtualBox ou VmWare (au choix). Il permet de donner une couche supplémentaire de gestion, en passant par des scripts simple à écrire.
@@ -36,6 +41,11 @@ $ cd Ubuntu-Python_DevEnv
 Ubuntu-Python_DevEnv $ vagrant up && vagrant ssh
 ```
 
+Une fois le tunnel ssh établis, une dernière commande d'installation de module Python doit être saisie :
+
+```bash
+$ pip3 install bitcoin
+```
 
 A savoir, voici les commandes les plus utiles de Vagrant :
 
@@ -55,4 +65,9 @@ $ vagrant destroy
 
 ## Instructions
 
+Une fois dans la machine virtuelle via la commande ssh présentée ci-dessus :
 
+```bash
+$ python3.6 KeyDerivations.py
+$ python3.6 EncryptDecrypt.py
+```
