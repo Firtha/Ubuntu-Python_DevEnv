@@ -10,6 +10,8 @@ sudo apt-get install python3-pip -y
 # Import programs
 cp /vagrant/KeyDerivations.py .
 cp /vagrant/EncryptDecrypt.py .
+cp -r /vagrant/files-to-encrypt .
+
 
 ## Test python with :
 # python3 --version
@@ -18,3 +20,4 @@ cp /vagrant/EncryptDecrypt.py .
 echo "************"
 echo "INSTALL DONE"
 echo "************"
+echo "Last manual command: pip3 install bitcoin"
